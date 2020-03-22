@@ -5,7 +5,7 @@
     border: 1px solid white;
 }
 
-div {
+.box {
     grid-row: auto;
     grid-column: auto;
     border: 1px solid black;
