@@ -1,11 +1,12 @@
 var container = document.querySelector('.container');
-
-var div = document.createElement('div'); //i could use another variable to change this later
-div.classList.add('.box');
-for(var i = 0; i < 16; ++i) {
-    for( var j = 0; j < 16; ++i) {
-        // container.innerHTML += '<div class ="box"></div>';
-        container.appendChild(div);
+for(var y = 0; y < 16; ++y) {
+    for( var x = 0; x < 16; ++x) {
+        container.innerHTML += '<div class ="box"></div>';
+        if(x == 16) break;
     }
-    var br = document.createElement('break');
 }
+
+hover.addEventListener('mouseover', () => {
+    var hover = document.querySelectorAll('.box');
+    hover.classList.add('hover');
+});
