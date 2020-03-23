@@ -6,7 +6,7 @@ for(var y = 0; y < 16; ++y) {
     }
 }
 
-let hover = document.getElementsByClassName('.box');
+let hover = document.getElementsByClassName('box');
 for(var i = 0; i < hover.length; i++) {
     hover[i].addEventListener('mouseover', (event) => {
         event.target.style.background = 'black';
