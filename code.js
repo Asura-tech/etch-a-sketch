@@ -1,4 +1,4 @@
-//These are the codes to make small boxes
+//These are the codes to make small boxes.
 let boxes = document.querySelector('.boxes');
 for(var y = 0; y < 16; ++y) {
     for( var x = 0; x < 16; ++x) {
@@ -6,6 +6,8 @@ for(var y = 0; y < 16; ++y) {
         if(x == 16) break;
     }
 }
+
+//Codes to make the boxes become black when mouse hovers over.
 let hover = document.getElementsByClassName('box');
 for(var i = 0; i < hover.length; i++) {
     hover[i].addEventListener('mouseover', (event) => {
@@ -13,12 +15,13 @@ for(var i = 0; i < hover.length; i++) {
     });
 }
 
-//These are the codes to make a reset button
+//These are the codes to make a reset button.
 //1) need to find a way to reset small boxes' color
-//2) need to find a way to make the reset button on top
-let container = document.querySelector('.container');
 let button = document.createElement('button');
+let box = document.getElementsByClassName('box');
 button.classList.add('reset');
 button.textContent = 'Reset';
-button.addEventListener('click', () => window.location.reload());
-container.appendChild(button);
+for( var i = 0; i < button.length; i++) {
+    button[i].addEventListener('click', () => box.style.background = 'white');
+}
+boxes.appendChild(button);

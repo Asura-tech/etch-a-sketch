@@ -15,9 +15,13 @@
     height: 16px;
 }
 
-.container {
+/* .container {
     display: flex;
     height: fit-content;
     justify-content: center;
+} */
+
+.reset {
+    width: fit-content;
 }
 
