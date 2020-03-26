@@ -17,11 +17,13 @@ for(var i = 0; i < hover.length; i++) {
 
 //These are the codes to make a reset button.
 //1) need to find a way to reset small boxes' color
+let box = boxes.childNodes;
 let button = document.createElement('button');
-let box = document.getElementsByClassName('box');
 button.classList.add('reset');
 button.textContent = 'Reset';
-for( var i = 0; i < button.length; i++) {
-    button[i].addEventListener('click', () => box.style.background = 'white');
-}
+button.addEventListener('click', () => {
+    for(var i = 0; i < box.length; ++i) {
+        box[i].style.background = 'white';
+    }
+});
 boxes.appendChild(button);
