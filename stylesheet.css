@@ -1,4 +1,4 @@
-.boxes {
+.container {
     display: grid;
     grid-template-columns: repeat(16, 16px);
     grid-template-rows: repeat(16, 16px);
@@ -15,13 +15,13 @@
     height: 16px;
 }
 
-/* .black {
+.black {
     background-color: black;
 }
 
 .white {
     background-color: white;
-} */
+}
 
 /* .container {
     display: flex;
