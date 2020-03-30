@@ -45,7 +45,7 @@ function makeBlack() {
 }
 
 function askUser() {//another bug is here; it starts when i refresh the page
-    var userInput = prompt('What dimension do you want?');
+    // var userInput = prompt('What dimension do you want?');
     alert('You have chose ' +userInput+ 'px.');
     changeDimension(userInput);
 }
