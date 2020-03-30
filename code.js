@@ -1,11 +1,11 @@
 //These are the codes to make default 16x16 boxes.
 var container = document.querySelector('.container');
-// for(var y = 0; y < 16; ++y) {
-//     for(var x = 0; x < 16; ++x) {
-//         container.innerHTML += '<div class ="box"></div>';
-//         if(x == 16) break;
-//     }
-// }
+for(var y = 0; y < 16; ++y) {
+    for(var x = 0; x < 16; ++x) {
+        container.innerHTML += '<div class ="box"></div>';
+        if(x == 16) break;
+    }
+}
 
 //Codes to make the container become black when mouse blackBoxs over for default boxes.
 var blackBox = document.getElementsByClassName('box');
@@ -45,20 +45,20 @@ function makeBlack() {
 }
 
 function askUser() {//another bug is here; it starts when i refresh the page
-    // var userInput = prompt('What dimension do you want?');
+    var userInput = prompt('What dimension do you want?');
     alert('You have chose ' +userInput+ 'px.');
     changeDimension(userInput);
 }
 
 function changeDimension(userRequest) {
-    // if(userRequest <= 960) { 
+    if(userRequest <= 960) { 
         for(var y = 0; y < userRequest; ++y) {
             for(var x = 0; x < userRequest; ++x) {
                 container.innerHTML += '<div class ="userBox"></div>';
                 if(x == userRequest) break;
             }
         }
-    // }
+    }
 }
 
 // function removeClass() {
