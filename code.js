@@ -17,22 +17,22 @@ for(var i = 0; i < blackBox.length; i++) {
 var resetButton = document.createElement('button');
 resetButton.classList.add('reset');
 resetButton.textContent = 'Reset';
-resetButton.addEventListener('click', makeWhite());
 container.appendChild(resetButton);
+resetButton.addEventListener('click', makeWhite());
 
 var dimensionButton = document.createElement('button'); 
 dimensionButton.classList.add('dimension');
 dimensionButton.textContent = 'Wanna change dimension of the grid?';
-dimensionButton.addEventListener('click', askUser());
 container.appendChild(dimensionButton);
+dimensionButton.addEventListener('click', askUser());
 
 
 //below are the functions to be used.
 function makeWhite() {
-    return (event) => {
-        for (var i = 0; i < event.length; ++i) {
-            event[i].classList.add('white');
-            event[i].classList.remove('black');
+    return () => {
+        for (var i = 0; i < blackBox.length; ++i) {
+            blackBox[i].classList.add('white');
+            blackBox[i].classList.remove('black');
         }
     };
 }
@@ -47,7 +47,7 @@ function makeBlack() {
 function askUser() {//another bug is here; it starts when i refresh the page
     var userInput = prompt('What dimension do you want?');
     alert('You have chose ' +userInput+ 'px.');
-    changeDimension(userInput);
+    // changeDimension(userInput);
 }
 
 function changeDimension(userRequest) {
