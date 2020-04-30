@@ -2,4 +2,4 @@ This project shows my understanding of DOM manipulation, which is a very importa
 
 To check out the live version:
 
-https://asura-tech.github.io/etch-a-sketch/
+https://asurafiend.github.io/etch-a-sketch/
