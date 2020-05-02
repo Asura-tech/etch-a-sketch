@@ -2,4 +2,4 @@ This project shows my understanding of DOM manipulation, which is a very importa
 
 To check out the live version:
 
-https://bug-keeper.github.io/etch-a-sketch/
+https://phu-p.github.io/etch-a-sketch/
